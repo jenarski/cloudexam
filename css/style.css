@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,900');
+
+*, *::before, *::after { box-sizing: inherit; }
+
+body { padding: 0; margin: 0; font-family: 'Lato', sans-serif; font-weight: normal; line-height: 1.2; color: #0a0a0a; background: #fefefe; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+p { font-size: inherit; line-height: 1.6; margin-bottom: 1rem; text-rendering: optimizeLegibility; }
+div{display: block;}
+h1 { font-size: 3rem; }
+a { color: #2199e8; text-decoration: none; line-height: inherit; cursor: pointer; }
+.fontnormal{ font-weight: 300; }
+.fontitalic{ font-style: italic;}
+.subhead{  }
+.uppercase{ text-transform: uppercase; }
+.applegreencolor{color: #619845;}
+.greencolor{color: #0c8343;}
+.bluecolor{color: #113d56;}
+.text-center { text-align: center; }
+.noverticalmargin{ margin-top: 0px; margin-bottom: 0px; }
+.largeverticalmargin{ margin-top: 20px; margin-bottom: 30px;  }
+/* Global Settings */
+
+
+/*  SECTIONS  */
+.section { max-width: 75rem; margin-left: auto; margin-right: auto; clear: both; }
+
+/*  COLUMN SETUP  */
+.col { display: inline-block; float:left; margin: 1% 0 1% 1.6%; }
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.align-center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-left: auto; margin-right: auto;}
+.float-left{ float: left !important; }
+.float-right{ float: right !important; }
+
+.col-wrap{border: 1px solid #eaeaea; padding: 20px; z-index: 999;}
+.icons{ padding: 10px; width: 110px; height: 55px; border-top-left-radius: 55px; border-top-right-radius: 55px; border: 1px solid #eaeaea; border-bottom: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+    box-sizing: border-box; margin: -75px auto 0 auto; z-index: 1; background-color: #fff;}
+.icons img{ padding: 20px; background-color: #f2f2f2; border-radius: 50%; }
+.col-copy{ margin-top: 70px; }
+
+.button {  display: block; text-align: center; line-height: 1; cursor: pointer;   -webkit-appearance: none; transition: background-color 0.25s ease-out, color 0.25s ease-out; vertical-align: middle; border: 1px solid transparent; border-radius: 0; padding: 0.85em 1em; margin: 0 0 1rem 0; font-size: 1.5rem; font-weight: bold; color: #fff;}
+	.button.learn-more{ background-color: #113d56; }
+	.button.apply-now{ background-color: #0c8343; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	/*  GRID OF TWELVE  */
+	.smallspan_12 {	width: 100%; clear: both; }
+	.smallspan_11 {	width: 91.53%; }
+	.smallspan_10 {	width: 83.06%; }
+	.smallspan_9 { width: 74.6%; }
+	.smallspan_8 { width: 66.13%; }
+	.smallspan_7 { width: 57.66%; }
+	.smallspan_6 { width: 49.2%; }
+	.smallspan_5 { width: 40.73%; }
+	.smallspan_4 { width: 32.26%; }
+	.smallspan_3 { width: 23.8%; }
+	.smallspan_2 { width: 15.33%; }
+	.smallspan_1 { width: 6.866%; }	
+	.col { padding-left: 0.9375rem; padding-right: 0.9375rem; clear: both; float: left; margin: 10px auto;}
+    
+    .button{}
+    .mobile-margin-bottom{margin-bottom: 70px;}
+    .mobile-nomargin-horizontal{margin-left: 0px; margin-right: 0px;}
+    .mobile-nopadding-horizontal{padding-left: 0px; padding-right: 0px;}
+    .section.group .mobile-margin-bottom:last-child{margin-bottom: 0px;}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	.col { padding-left: 0.9375rem; padding-right: 0.9375rem; float: left; margin: 10px auto;}		
+	.mediumspan_12 { width: 100%; clear: both; }
+	.mediumspan_11 { width: 91.53%; }
+	.mediumspan_10 { width: 83.06%; }
+	.mediumspan_9 { width: 74.6%; }
+	.mediumspan_8 { width: 66.13%; }
+	.mediumspan_7 { width: 57.66%; }
+	.mediumspan_6 { width: 46%; }
+	.mediumspan_5 { width: 40.73%; }
+	.mediumspan_4 { width: 32.26%; }
+	.mediumspan_3 { width: 23.8%; }
+	.mediumspan_2 { width: 15.33%; }
+	.mediumspan_1 { width: 6.866%; }	
+
+    .tablet-margin-bottom{margin-bottom: 70px;}
+    .tablet-nomargin-horizontal{margin-left: 0px; margin-right: 0px;}
+    .tablet-nopadding-horizontal{padding-left: 0px; padding-right: 0px;}
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+ 
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+/*  GRID OF TWELVE  */
+.largespan_12 {	width: 100%; }
+.largespan_11 {	width: 91.53%; }
+.largespan_10 {	width: 83.06%; }
+.largespan_9 { width: 74.6%; }
+.largespan_8 { width: 66.13%; }
+.largespan_7 { width: 57.66%; }
+.largespan_6 { width: 49.2%; }
+.largespan_5 { width: 40.73%; }
+.largespan_4 { width: 32.26%; }
+.largespan_3 { width: 23.8%; }
+.largespan_2 { width: 15.33%; }
+.largespan_1 { width: 6.866%; }	
+
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+}
